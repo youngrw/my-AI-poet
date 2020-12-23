@@ -1,0 +1,56 @@
+import random
+import pinyin
+
+noun = open('freqword_n.txt', encoding='utf-8').read().split()
+verb = open('freqword_v.txt', encoding='utf-8').read().split()
+
+def writeLine1():
+    global nounlist
+    global verblist
+    i=random.randint(0,len(noun)-1)
+    j=random.randint(0,len(verb)-1)
+    k=random.randint(0,len(noun)-1)
+    print(noun[i]+verb[j]+noun[k]+'，')
+def writeLine2():
+    global nounlist
+    global verblist
+    i=random.randint(0,len(noun)-1)
+    j=random.randint(0,len(verb)-1)
+    k=random.randint(0,len(noun)-1)
+    print(noun[i]+verb[j]+noun[k]+'。')
+def writeLine3():
+    global nounlist
+    global verblist
+    i=random.randint(0,len(noun)-1)
+    j=random.randint(0,len(verb)-1)
+    k=random.randint(0,len(noun)-1)
+    print(verb[j]+noun[j]+noun[k][1]+'，')
+def writeLine4():
+    global nounlist
+    global verblist
+    i=random.randint(0,len(noun)-1)
+    j=random.randint(0,len(verb)-1)
+    k=random.randint(0,len(noun)-1)
+    print(verb[j]+noun[i]+noun[k]+'。')
+def writeLine5():
+    global nounlist
+    global verblist
+    i=random.randint(0,len(noun)-1)
+    j=random.randint(0,len(verb)-1)
+    k=random.randint(0,len(noun)-1)
+    print(verb[j]+'，')
+    print(verb[j]+'？')
+def writeLine6():
+    global nounlist
+    global verblist
+    i = random.randint(0, len(noun) - 1)
+    j = random.randint(0, len(verb) - 1)
+    k = random.randint(0, len(noun) - 1)
+    print(verb[j] + noun[i] + noun[k]+'。')
+
+writeLine1()
+writeLine2()
+writeLine3()
+writeLine4()
+writeLine5()
+writeLine6()
